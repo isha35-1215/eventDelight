@@ -1,7 +1,7 @@
 
 const Header = () => {
     return (
-        <div className="hero min-h-screen mb-20" style={{ backgroundImage: 'url(https://i.ibb.co/fSjNsB5/event-mngm.jpg)' }}>
+        <div className="hero min-h-screen my-10" style={{ backgroundImage: 'url(https://i.ibb.co/fSjNsB5/event-mngm.jpg)' }}>
             <div className="hero-overlay bg-opacity-70"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-xl">

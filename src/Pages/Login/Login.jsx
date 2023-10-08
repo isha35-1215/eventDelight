@@ -1,58 +1,90 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
+import swal from "sweetalert";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../../firbase/firebase.config";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
 
-    const {signIn} = useContext(AuthContext);
+    const { signIn } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const auth = getAuth(app);
+
+    const provider = new GoogleAuthProvider();
+
+    const handleGoogleLogin = () => {
+
+        signInWithPopup(auth, provider)
+            .then(res => {
+                console.log(res);
+                swal("Congrats!!", "You are successfully logged in!", "success");
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    }
 
     const handleLogin = e => {
         e.preventDefault();
         console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
-        const email =form.get('Email');
-        const password =form.get('Password');
-        console.log(email,password);
-        signIn(email,password)
-        .then(result =>{
-            console.log(result.user)
-        })
-        .catch(error =>{
-            console.error(error);
-        })
+        const email = form.get('Email');
+        const password = form.get('Password');
+        console.log(email, password);
+        signIn(email, password)
+            .then(result => {
+                console.log(result.user);
+                swal("Congrats!!", "You are successfully logged in!", "success")
+
+                navigate(location?.state ? location.state : '/');
+            })
+            .catch(error => {
+                console.error(error);
+            })
     }
 
 
     return (
-        <div>
+        <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto font-poppins">
             <Navbar></Navbar>
-            <div className="hero min-h-screen bg-fuchsia-100">
+            <div className="hero py-40 bg-fuchsia-100">
                 <div className="hero-content flex-col">
                     <div className="text-center">
                         <h1 className="text-5xl font-bold">Login now!</h1>
                     </div>
                     <div className="card w-96 shadow-sm bg-fuchsia-50">
-                        <form onSubmit={handleLogin} className="p-10">
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Email</span>
-                                </label>
-                                <input type="email" placeholder="Email" name="Email" className="input input-bordered" required />
-                            </div>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Password</span>
-                                </label>
-                                <input type="password" placeholder="Password" name="Password" className="input input-bordered" required />
-                                
-                            </div>
-                            <div className="form-control mt-6">
-                                <button className="btn btn-primary bg-fuchsia-700 border-fuchsia-500 text-white">Login</button>
-                            </div>
-                            <p className="">Do not have an account? <Link className="text-fuchsia-700 font-medium" to="/register">Register</Link></p>
+                        <div className="card-body">
+                            <form onSubmit={handleLogin} className="">
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text">Email</span>
+                                    </label>
+                                    <input type="email" placeholder="Email" name="Email" className="input input-bordered" required />
+                                </div>
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text">Password</span>
+                                    </label>
+                                    <input type="password" placeholder="Password" name="Password" className="input input-bordered" required />
 
-                        </form>
+                                </div>
+                                <div className="form-control mt-6">
+                                    <button className="btn btn-primary bg-fuchsia-700 border-fuchsia-500 normal-case text-base text-white">Login</button>
+                                </div>
+                                
+
+                            </form>
+                            <button onClick={handleGoogleLogin} className="btn btn-primary normal-case text-base font-bold bg-fuchsia-700 w-full my-2 border-fuchsia-300 text-white">
+                                <FcGoogle className="text-xl"></FcGoogle>
+                                Continue with Google
+                            </button>
+                            <p className="">Do not have an account? <Link className="text-fuchsia-700 font-medium" to="/register">Register</Link></p>
+                        </div>
                     </div>
                 </div>
             </div>

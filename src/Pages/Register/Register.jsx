@@ -2,34 +2,48 @@ import { Link } from "react-router-dom";
 import Navbar from "../../Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
+import swal from "sweetalert";
 
 const Register = () => {
 
-    const {createUser}= useContext(AuthContext);
-
-    const handleRegister = e => {
+    const {createUser} = useContext(AuthContext)
+    const handleRegister = e =>{
         e.preventDefault();
-        console.log(e.currentTarget);
-        const form = new FormData(e.currentTarget);
-        const name = form.get('Name');
-        const photo = form.get('Photo URL');
-        const email = form.get('Email');
-        const password = form.get('Password');
-        console.log(name, email, photo, password);
+        console.log(e.currentTarget)
+        const form =new FormData(e.currentTarget);
+        const name=form.get("Name");
+        const email=form.get("Email");
+        const password=form.get("Password");
+        const photo=form.get("Photo URL")
+        console.log(name,email,photo,password);
+        
+        if (password.length < 6) {
+            return swal("Opps !!", "Total length of password at least 6 characters", "error");
+        }
 
-        //create user
-        createUser(email, password)
+        // Check if the input contains at least one capital letter
+        if (!/[A-Z]/.test(password)) {
+            return swal("Opps !!", "Give at least one capital letter ", "error");
+        }
+
+        // Check if the input contains any special characters
+        if (!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)) {
+            return swal("Opps !!", "Give at least one special character ", "error");
+        }
+        createUser(email,password)
         .then(result =>{
-            console.log(result.user)
+            console.log(result.user);
+            swal("Congrats!!","You are successfully registered!", "success");
+
         })
         .catch(error =>{
-            console.error(error);
+            console.error(error)
         })
     }
 
     
     return (
-        <div>
+        <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto font-poppins">
             <Navbar></Navbar>
             <div className="hero min-h-screen bg-fuchsia-100">
                 <div className="hero-content flex-col">
