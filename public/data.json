@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Hilarious Hilarity: Laugh Till You Drop",
+        "img": "https://i.ibb.co/YB0Nc3K/event4.jpg",
+        "details": "Prepare for unstoppable laughter at 'Hilarious Hilarity'. Comedy at its finest – an evening guaranteed to have you laughing until you can't laugh anymore! Don't miss it out!",
+        "price": 1000,
+        "date": "Saturday, October 28th, 2023",
+        "time": " 7:00 PM - 10:00 PM",
+        "venue": "Smithsonian Theater"
+    },
+    {
+        "id": 2,
+        "title": "A Night of Theater and Performing Arts",
+        "img": "https://i.ibb.co/0MnbLmq/event2.jpg",
+        "details": " Dive into a world of captivating drama and music at our Theater & Performing Arts Night. An evening of artistic brilliance awaits. Join us for unforgettable performances.",
+        "price": 1200,
+        "date": "Saturday, November 12, 2023",
+        "time": "8:00 PM - 10:00 PM",
+        "venue": "Smithsonian Theater"
+    },
+    {
+        "id": 3,
+        "title": "A Night of Glamour and Entertainment",
+        "img": "https://i.ibb.co/vcg5x8Z/event3.jpg",
+        "details": "Get ready for a night of pure elegance and entertainment! Dress to impress and enjoy a glamorous evening with live performances, exquisite cuisine, and unforgettable moments.",
+        "price": 1000,
+        "date": "Sunday, June 12, 2023",
+        "time": "6:00 PM - 10:00 PM",
+        "venue": "Cineplex"
+    },
+    {
+        "id": 4,
+        "title": "Summer Sounds Music Festival",
+        "img": "https://i.ibb.co/ZSd98Vt/event1.jpg",
+        "details": "Join us to enjoy a weekend of music, food, and fun! Join us at Summer Sounds for top artists, delicious food, and unforgettable memories.",
+        "price": 3000,
+        "date": "August 12th - August 14th,2023",
+        "time": "6:30 PM - 10:00 PM",
+        "venue": "Meadowview Park, 1234 Festival Lane, Anytown, USA"
+    },
+    {
+        "id": 5,
+        "title": "Sports Extravaganza",
+        "img": "https://i.ibb.co/sg97mh3/event-5.jpg",
+        "details": "A thrilling showcase of athleticism, competition, and sportsmanship. Join us for an action-packed event that will leave you on the edge of your seat!",
+        "price": 1500,
+        "date": "Saturday, November 12,2023",
+        "time": "6:30 PM - 10:00 PM",
+        "venue": "Laughter Lounge Theater"
+    },
+    {
+        "id": 6,
+        "title": "Outdoor Movie Nights",
+        "img": "https://i.ibb.co/r76qmbh/event6.jpg",
+        "details": " Enjoy the magic of cinema under the stars. Bring your blanket and popcorn for a memorable evening of open-air entertainment.",
+        "price": 2000,
+        "date": "Saturday, July 15, 2023",
+        "time": "Gates open at 7:00 PM, Movie starts at sunset",
+        "venue": "Central Park Amphitheater"
+    }
+]
