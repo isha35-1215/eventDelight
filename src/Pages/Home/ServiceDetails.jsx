@@ -41,13 +41,10 @@ const ServiceDetails = () => {
                     </p>
                     <h2 className="pt-6 text-xl font-medium text-fuchsia-700">Date: {detail.date}</h2>
                     <h2 className="pt-2 text-xl font-medium text-fuchsia-700">Time: {detail.time}</h2>
-                    <div className="flex justify-between">
                         <button className="my-6 btn normal-case btn-primary bg-fuchsia-700 text-white border-none">
                             Purchase Ticket: ${detail.price}
-                        </button><Link to='/'><button className="btn btn-ghost border-white bg-fuchsia-400 text-white shadow-2xl my-6">
-                            Go Back to Home
-                        </button></Link>
-                    </div>
+                        </button>
+                    
                 </div>
 
             </div>

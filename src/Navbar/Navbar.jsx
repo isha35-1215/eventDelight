@@ -43,7 +43,7 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    <a className="btn btn-ghost normal-case invisible md:visible  text-fuchsia-900  text-3xl font-bold">
+                    <a className="btn btn-ghost normal-case invisible lg:visible  text-fuchsia-900  text-3xl font-bold">
                         <img className='w-[30px] h-[30px]' src="https://i.ibb.co/Z60BpR3/logo2.png" alt="icon1" border="0" />EventDelight</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -55,7 +55,7 @@ const Navbar = () => {
 
                     <p>{user?.displayName}</p>
                     <div>{user ?
-                        <img className='rounded-full w-12 h-12' src={user?.photoURL} alt="" />
+                        <img className='rounded-full w-16 h-12' src={user?.photoURL} alt="" />
                         :
                         <FaUserCircle className='text-4xl'></FaUserCircle>
                     }
