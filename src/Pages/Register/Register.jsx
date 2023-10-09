@@ -8,7 +8,7 @@ import swal from "sweetalert";
 const Register = () => {
 
 
-    const {createUser} = useContext(AuthContext)
+    const {createUser, updateUser} = useContext(AuthContext)
     const handleRegister = e =>{
         e.preventDefault();
         console.log(e.currentTarget)
@@ -36,6 +36,9 @@ const Register = () => {
         createUser(email,password)
         .then(result =>{
             console.log(result.user);
+            updateUser(name,photo)
+            .then(()=>console.log("updated"))
+            .catch();
             swal("Congrats!!","You are successfully registered!", "success");
 
         })
