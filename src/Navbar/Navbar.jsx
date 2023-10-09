@@ -55,7 +55,7 @@ const Navbar = () => {
 
                     <p>{user?.displayName}</p>
                     <div>{user ?
-                        <img className='rounded-full w-12' src={user?.photoURL} alt="" />
+                        <img className='rounded-full w-12 h-12' src={user?.photoURL} alt="" />
                         :
                         <FaUserCircle className='text-4xl'></FaUserCircle>
                     }
