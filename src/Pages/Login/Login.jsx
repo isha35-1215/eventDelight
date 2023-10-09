@@ -45,7 +45,7 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 console.log(result.user);
-                swal("Congrats!!", "You are successfully logged in!", "success")
+                swal("Congrats!!", "Logged in Successfully!", "success")
 
                 navigate(location?.state ? location.state : '/');
             })
@@ -54,7 +54,6 @@ const Login = () => {
                 swal("Oops!", "Email or password doesn't match. Please try again.", "error");
             })
     }
-
 
     return (
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto font-poppins">

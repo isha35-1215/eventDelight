@@ -12,7 +12,7 @@ const Contact = () => {
     return (
         <div className="hero bg-fuchsia-100 my-20 py-10">
             <div className="hero-content grid grid-cols-1 lg:grid-cols-3">
-                <div data-aos="zoom-out" className="justify-center col-span-2 max-w-6xl">
+                <div data-aos="zoom-in" className="justify-center col-span-2 max-w-6xl">
                     <div  className="text-center">
                         <h1 className="text-5xl font-bold text-fuchsia-900">Stay Connected</h1>
                     </div>
@@ -30,7 +30,7 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-                <img data-aos="fade-down-left" src="https://i.ibb.co/1K41kBQ/contact-Us.png" className="max-w-sm rounded-lg shadow-2xl" />
+                <img data-aos="zoom-out" src="https://i.ibb.co/1K41kBQ/contact-Us.png" className="max-w-sm rounded-lg shadow-2xl" />
 
             </div>
         </div>

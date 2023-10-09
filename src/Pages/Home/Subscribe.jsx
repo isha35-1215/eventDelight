@@ -12,10 +12,10 @@ const Subscribe = () => {
 
     return (
         <div className="bg-fuchsia-100 mt-20 p-20 grid grid-cols-1 lg:grid-cols-2">
-            <div data-aos="fade-right">
+            <div data-aos="zoom-in">
                 <img src="https://i.ibb.co/bBT7Cpx/subscribe.png" alt="" />
             </div>
-            <div data-aos="zoom-in-up">
+            <div data-aos="zoom-out">
                 <h1 className="justify-center text-center pt-10 text-5xl font-bold text-fuchsia-900">Subscribe Now</h1>
 
                 <h2 className="my-4 text-fuchsia-700 text-center">Your passport to unforgettable experiences is just a click away.</h2>

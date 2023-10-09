@@ -23,7 +23,7 @@ const Blog = () => {
                 {/* section-1 */}
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">The Journey Begins - Navigating Our Website</h2>
-                    <div data-aos="flip-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">User-Friendly Interface</h2>
@@ -50,7 +50,7 @@ const Blog = () => {
                 {/* section-2 */}
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Discovering the Best Events</h2>
-                    <div data-aos="flip-up"  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Comprehensive Event Listings</h2>
@@ -77,7 +77,7 @@ const Blog = () => {
                 {/* section-3 */}
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Planning Made Easy</h2>
-                    <div data-aos="flip-up"  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Seamless Ticket Booking</h2>
@@ -109,7 +109,7 @@ const Blog = () => {
                 {/* section-4 */}
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Making Memories</h2>
-                    <div data-aos="flip-up"  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Share Your Experience
@@ -145,7 +145,7 @@ const Blog = () => {
                 {/* section-5 */}
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Your Entertainment Hub</h2>
-                    <div data-aos="flip-up"  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Mobile App</h2>
@@ -180,7 +180,7 @@ const Blog = () => {
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Join the Entertainment Revolution
                     </h2>
-                    <div data-aos="flip-up"  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Community
@@ -214,7 +214,7 @@ const Blog = () => {
                 {/* section-4 */}
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Security and Privacy</h2>
-                    <div data-aos="flip-up"  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Secure Transactions
