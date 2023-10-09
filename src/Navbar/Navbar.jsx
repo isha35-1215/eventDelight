@@ -59,6 +59,7 @@ const Navbar = () => {
                         :
                         <FaUserCircle className='text-4xl'></FaUserCircle>
                     }
+                    
 
                     </div>
                     {
