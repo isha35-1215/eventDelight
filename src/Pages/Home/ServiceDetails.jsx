@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Navbar from "../../Navbar/Navbar";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ServiceDetails = () => {
     const [detail, setDetail] = useState({});
     const { id } = useParams();
 
     useEffect(() => {
+        AOS.init();
+
         fetch("/data.json")
             .then((res) => res.json())
             .then((data) => {
@@ -20,12 +24,12 @@ const ServiceDetails = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="max-w-2xl md:max-w-4xl lg:max-w-6xl mx-auto py-10">
-                <div className="w-full rounded-md bg-cover bg-center " >
+            <div className="max-w-xl md:max-w-4xl lg:max-w-6xl mx-10 lg:mx-auto pb-10">
+                <div data-aos="fade-up" className="w-full rounded-md bg-cover bg-center " >
                     <img
                         src={detail.img}
                         alt={detail.title}
-                        className="rounded-md w-full h-full object-cover"
+                        className="rounded-md w-full h-[72vh] object-cover"
                     />
                 </div>
                 <div className="text-neutral-content">

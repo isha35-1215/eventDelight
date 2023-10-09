@@ -7,7 +7,10 @@ import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "../../firbase/firebase.config";
 import { FcGoogle } from "react-icons/fc";
 
+
 const Login = () => {
+
+    
 
     const { signIn } = useContext(AuthContext);
     const location = useLocation();
@@ -23,6 +26,9 @@ const Login = () => {
             .then(res => {
                 console.log(res);
                 swal("Congrats!!", "You are successfully logged in!", "success");
+
+                navigate(location?.state ? location.state : '/');
+
             })
             .catch(err => {
                 console.log(err);
@@ -45,6 +51,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.error(error);
+                swal("Oops!", "Email or password doesn't match. Please try again.", "error");
             })
     }
 
@@ -79,7 +86,7 @@ const Login = () => {
                                 
 
                             </form>
-                            <button onClick={handleGoogleLogin} className="btn btn-primary normal-case text-base font-bold bg-fuchsia-700 w-full my-2 border-fuchsia-300 text-white">
+                            <button onClick={handleGoogleLogin} className="btn btn-outline btn-secondary normal-case text-base font-bold bg-fuchsia-200 w-full my-2 border-fuchsia-300 text-fuchsia-900">
                                 <FcGoogle className="text-xl"></FcGoogle>
                                 Continue with Google
                             </button>

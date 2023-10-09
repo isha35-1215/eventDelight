@@ -4,7 +4,9 @@ import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import swal from "sweetalert";
 
+
 const Register = () => {
+
 
     const {createUser} = useContext(AuthContext)
     const handleRegister = e =>{
@@ -18,17 +20,18 @@ const Register = () => {
         console.log(name,email,photo,password);
         
         if (password.length < 6) {
-            return swal("Opps !!", "Total length of password at least 6 characters", "error");
+            return swal("Oops !!", "Total length of password at least 6 characters", "error");
         }
 
         // Check if the input contains at least one capital letter
         if (!/[A-Z]/.test(password)) {
-            return swal("Opps !!", "Give at least one capital letter ", "error");
+            return swal("Oops !!", "Give at least one capital letter ", "error");
         }
 
         // Check if the input contains any special characters
+        // eslint-disable-next-line no-useless-escape
         if (!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)) {
-            return swal("Opps !!", "Give at least one special character ", "error");
+            return swal("Oops !!", "Give at least one special character ", "error");
         }
         createUser(email,password)
         .then(result =>{
@@ -45,7 +48,7 @@ const Register = () => {
     return (
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto font-poppins">
             <Navbar></Navbar>
-            <div className="hero min-h-screen bg-fuchsia-100">
+            <div  className="hero min-h-screen bg-fuchsia-100">
                 <div className="hero-content flex-col">
                     <div className="text-center">
                         <h1 className="text-5xl font-bold">Register now!</h1>

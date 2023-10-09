@@ -1,30 +1,40 @@
+import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Blog = () => {
+
+    useEffect(() => {
+        AOS.init();
+      }, [])
+
+
     return (
-        <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto font-poppins">
+        <div className="">
             <Navbar></Navbar>
-            <div className="bg-fuchsia-50 my-10 md:my-16 lg:my-20 p-10">
+            <div className="bg-fuchsia-50 mb-10 md:mb-16 lg:mb-20 p-10 max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto font-poppins">
                 <div className="">
                     <h1 className="text-4xl font-bold text-fuchsia-950 py-2">Welcome to Our <span className="font-extrabold text-fuchsia-800">EventDelight</span> Event Management Website</h1>
-                    <p className="text-lg font-normal text-fuchsia-700 pt-4">In a world filled with constant demands on our time and attention, finding the perfect entertainment event can be a daunting task. Whether you're planning a night out with friends, a romantic evening, or a family gathering, the choices seem endless, and the search overwhelming.</p>
-                    <p className="text-lg font-normal text-fuchsia-700 py-4">But fear not! We're here to introduce you to the ultimate solution - our Entertainment Event Management website. We understand the importance of creating unforgettable memories, and that's why we've designed this platform to help you discover, plan, and experience the entertainment events of your dreams with ease.</p>
+                    <p className="text-lg font-normal text-fuchsia-700 pt-4">In a world filled with constant demands on our time and attention, finding the perfect entertainment event can be a daunting task. Whether you are planning a night out with friends, a romantic evening, or a family gathering, the choices seem endless, and the search overwhelming.</p>
+                    <p className="text-lg font-normal text-fuchsia-700 py-4">But fear not! We are here to introduce you to the ultimate solution - our Entertainment Event Management website. We understand the importance of creating unforgettable memories, and for this reason we have designed this platform to help you discover, plan, and experience the entertainment events of your dreams with ease.</p>
                 </div>
                 {/* section-1 */}
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">The Journey Begins - Navigating Our Website</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div data-aos="flip-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">User-Friendly Interface</h2>
-                                <p className="text-base font-normal text-fuchsia-700">Our website is your gateway to the world of entertainment. From the moment you arrive, you'll notice the clean, intuitive interface that makes navigation a breeze. Whether you're a tech-savvy enthusiast or a casual user, our website ensures a seamless experience for everyone.</p>
+                                <p className="text-base font-normal text-fuchsia-700">Our website is your gateway to the world of entertainment. From the moment you arrive, you will notice the clean, intuitive interface that makes navigation a breeze. Whether you are a tech-savvy enthusiast or a casual user, our website ensures a seamless experience for everyone.</p>
                             </div>
                         </div>
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Personalized Recommendations
                                 </h2>
-                                <p className="text-base font-normal text-fuchsia-700">We know that your preferences matter, which is why we employ advanced algorithms to offer personalized event recommendations. Tell us your interests, location, and budget, and we'll curate a list of events that are tailored just for you. No more sifting through endless options that don't quite fit your taste.
+                                <p className="text-base font-normal text-fuchsia-700">We know that your preferences matter, which is why we employ advanced algorithms to offer personalized event recommendations. Tell us your interests, location, and budget, and we will curate a list of events that are tailored just for you. No more sifting through endless options that do not quite fit your taste.
                                 </p>
                             </div>
                         </div>
@@ -32,7 +42,7 @@ const Blog = () => {
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Event Categories</h2>
                                 <p className="text-base font-normal text-fuchsia-700">
-                                    We've categorized events to simplify your search. From concerts and theater performances to sports events and festivals, you'll find a diverse range of options neatly organized. Just click on the category that suits your mood, and you're on your way to discovering exciting possibilities.</p>
+                                    We have categorized events to simplify your search. From concerts and theater performances to sports events and festivals, you will find a diverse range of options neatly organized. Just click on the category that suits your mood, and you are on your way to discovering exciting possibilities.</p>
                             </div>
                         </div>
                     </div>
@@ -40,18 +50,18 @@ const Blog = () => {
                 {/* section-2 */}
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Discovering the Best Events</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div data-aos="flip-up"  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Comprehensive Event Listings</h2>
-                                <p className="text-base font-normal text-fuchsia-700">Our website features a vast database of events from all over the world. Whether it's a local gig or an international festival, you'll find them all here. Explore detailed event listings that include dates, venues, artists, and ticket information.</p>
+                                <p className="text-base font-normal text-fuchsia-700">Our website features a vast database of events from all over the world. Whether it is a local gig or an international festival, you will find them all here. Explore detailed event listings that include dates, venues, artists, and ticket information.</p>
                             </div>
                         </div>
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Artist Profiles
                                 </h2>
-                                <p className="text-base font-normal text-fuchsia-700">If you're a fan of a particular artist or performer, we've got you covered. Dive into artist profiles to learn more about their background, upcoming shows, and even exclusive content. Get to know the artists who will be making your entertainment experience unforgettable.
+                                <p className="text-base font-normal text-fuchsia-700">If you are a fan of a particular artist or performer, we have got you covered. Dive into artist profiles to learn more about their background, upcoming shows, and even exclusive content. Get to know the artists who will be making your entertainment experience unforgettable.
                                 </p>
                             </div>
                         </div>
@@ -59,7 +69,7 @@ const Blog = () => {
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Reviews and Ratings</h2>
                                 <p className="text-base font-normal text-fuchsia-700">
-                                    Making informed decisions is essential. That's why we provide user-generated reviews and ratings for events. Read what other attendees have to say, and share your own experiences to help fellow entertainment enthusiasts make their choices.</p>
+                                    Making informed decisions is essential. So we provide user-generated reviews and ratings for events. Read what other attendees have to say, and share your own experiences to help fellow entertainment enthusiasts make their choices.</p>
                             </div>
                         </div>
                     </div>
@@ -67,7 +77,7 @@ const Blog = () => {
                 {/* section-3 */}
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Planning Made Easy</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div data-aos="flip-up"  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Seamless Ticket Booking</h2>
@@ -80,7 +90,7 @@ const Blog = () => {
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">PGroup Bookings
 
                                 </h2>
-                                <p className="text-base font-normal text-fuchsia-700">Planning a night out with friends or organizing a family outing? Our group booking feature lets you reserve multiple tickets in one go. It's convenient, time-saving, and ensures that everyone gets to join in on the fun.
+                                <p className="text-base font-normal text-fuchsia-700">Planning a night out with friends or organizing a family outing? Our group booking feature lets you reserve multiple tickets in one go. It is convenient, time-saving, and ensures that everyone gets to join in on the fun.
 
                                 </p>
                             </div>
@@ -90,7 +100,7 @@ const Blog = () => {
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Event Reminders
                                 </h2>
                                 <p className="text-base font-normal text-fuchsia-700">
-                                    Never miss an event again! Set up event reminders and receive notifications for your chosen events. We'll make sure you're always up to date with the latest information, so you can plan your entertainment calendar effortlessly.
+                                    Never miss an event again! Set up event reminders and receive notifications for your chosen events. We will make sure you are always up to date with the latest information, so you can plan your entertainment calendar effortlessly.
                                 </p>
                             </div>
                         </div>
@@ -99,7 +109,7 @@ const Blog = () => {
                 {/* section-4 */}
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Making Memories</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div data-aos="flip-up"  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Share Your Experience
@@ -114,7 +124,7 @@ const Blog = () => {
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Exclusive Merchandise
 
                                 </h2>
-                                <p className="text-base font-normal text-fuchsia-700">Commemoorate your event with exclusive merchandise available on our website. From t-shirts and posters to limited-edition collectibles, you'll find a range of items to help you cherish the memories.
+                                <p className="text-base font-normal text-fuchsia-700">Commemorate your event with exclusive merchandise available on our website. From t-shirts and posters to limited-edition collectibles, you will find a range of items to help you cherish the memories.
 
                                 </p>
                             </div>
@@ -124,7 +134,7 @@ const Blog = () => {
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Feedback and Suggestions
 
                                 </h2>
-                                <p className="text-base font-normal text-fuchsia-700">We value your feedback and are constantly striving to improve our services. Have a suggestion? Let us know, and we'll do our best to make your future entertainment experiences even better.
+                                <p className="text-base font-normal text-fuchsia-700">We value your feedback and are constantly striving to improve our services. Have a suggestion? Let us know, and we will do our best to make your future entertainment experiences even better.
 
 
                                 </p>
@@ -135,7 +145,7 @@ const Blog = () => {
                 {/* section-5 */}
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Your Entertainment Hub</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div data-aos="flip-up"  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Mobile App</h2>
@@ -170,7 +180,7 @@ const Blog = () => {
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Join the Entertainment Revolution
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div data-aos="flip-up"  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Community
@@ -195,7 +205,7 @@ const Blog = () => {
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Sustainability Initiatives
                                 </h2>
                                 <p className="text-base font-normal text-fuchsia-700">
-                                    We care about the planet. We're committed to sustainability, and we partner with eco-conscious events and venues to minimize our environmental footprint.
+                                    We care about the planet. We are committed to sustainability, and we partner with eco-conscious events and venues to minimize our environmental footprint.
                                 </p>
                             </div>
                         </div>
@@ -204,7 +214,7 @@ const Blog = () => {
                 {/* section-4 */}
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Security and Privacy</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div data-aos="flip-up"  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Secure Transactions
@@ -228,6 +238,7 @@ const Blog = () => {
                 </div>
 
             </div>
+            <Footer></Footer>
 
         </div>
     );

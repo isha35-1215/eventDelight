@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Card = () => {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
+        AOS.init();
         // Use the correct path to your JSON file.
         fetch("./data.json")
             .then((res) => res.json())
@@ -14,9 +17,9 @@ const Card = () => {
     return (
         <div className="bg-fuchsia-200 bg-opacity-30 py-10">
             <h3 className="py-4 text-4xl text-center text-fuchsia-900 font-extrabold">Our Services</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 mx-auto gap-12 my-6 px-12 md:px-20 lg:px-24">
+            <div className="grid grid-cols-1 md:grid-cols-3 mx-auto gap-12 my-6 px-12 md:px-20 lg:px-24" >
                 {cards.map((cart) => (
-                    <div key={cart.id} className="card bg-base-100 shadow-xl">
+                    <div key={cart.id} className="card bg-base-100 shadow-xl" data-aos="zoom-in">
                         <figure className="px-6 pt-6">
                             <img src={cart.img} alt={cart.title} className="rounded-xl" />
                         </figure>

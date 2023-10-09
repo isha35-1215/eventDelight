@@ -1,7 +1,7 @@
+import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 import Card from "./Card";
 import Contact from "./Contact";
-import Footer from "./Footer";
 import Header from "./Header";
 import Subscribe from "./Subscribe";
 
