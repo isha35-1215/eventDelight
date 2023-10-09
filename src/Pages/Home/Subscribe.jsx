@@ -20,7 +20,7 @@ const Subscribe = () => {
 
                 <h2 className="my-4 text-fuchsia-700 text-center">Your passport to unforgettable experiences is just a click away.</h2>
                 <div className="form-control">
-                    <div className="input-group justify-center w-full">
+                    <div className="input-group justify-center w-11/12">
                         <input
                             type="text"
                             placeholder="Your Email..."
