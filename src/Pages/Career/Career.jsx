@@ -14,7 +14,7 @@ const Career = () => {
         <div>
             <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto font-poppins mb-20">
                 <Navbar></Navbar>
-                <img data-aos="fade-up" className="w-full h-[62vh]" src="https://i.ibb.co/YBRdw4K/career2.jpg" alt="" />
+                <img data-aos="zoom-in" className="w-full h-[62vh]" src="https://i.ibb.co/YBRdw4K/career2.jpg" alt="" />
 
                 <div className="bg-fuchsia-100 py-6 md:py-10 lg:py-12 px-10">
                     <h1 className="text-4xl font-bold text-fuchsia-700 text-center py-2">Start Your Career with <span className="font-extrabold text-fuchsia-800">EventDelight</span></h1>

@@ -24,13 +24,13 @@ const Blog = () => {
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">The Journey Begins - Navigating Our Website</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">User-Friendly Interface</h2>
                                 <p className="text-base font-normal text-fuchsia-700">Our website is your gateway to the world of entertainment. From the moment you arrive, you will notice the clean, intuitive interface that makes navigation a breeze. Whether you are a tech-savvy enthusiast or a casual user, our website ensures a seamless experience for everyone.</p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Personalized Recommendations
                                 </h2>
@@ -38,7 +38,7 @@ const Blog = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Event Categories</h2>
                                 <p className="text-base font-normal text-fuchsia-700">
@@ -51,13 +51,13 @@ const Blog = () => {
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Discovering the Best Events</h2>
                     <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Comprehensive Event Listings</h2>
                                 <p className="text-base font-normal text-fuchsia-700">Our website features a vast database of events from all over the world. Whether it is a local gig or an international festival, you will find them all here. Explore detailed event listings that include dates, venues, artists, and ticket information.</p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Artist Profiles
                                 </h2>
@@ -65,7 +65,7 @@ const Blog = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Reviews and Ratings</h2>
                                 <p className="text-base font-normal text-fuchsia-700">
@@ -78,14 +78,14 @@ const Blog = () => {
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Planning Made Easy</h2>
                     <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Seamless Ticket Booking</h2>
                                 <p className="text-base font-normal text-fuchsia-700">Gone are the days of waiting in long lines or worrying about sold-out shows. Our website offers a hassle-free ticket booking experience. Select your preferred seats, pay securely, and receive e-tickets instantly. You can even print them if you prefer a physical copy.
                                 </p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">PGroup Bookings
 
@@ -95,7 +95,7 @@ const Blog = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Event Reminders
                                 </h2>
@@ -110,7 +110,7 @@ const Blog = () => {
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Making Memories</h2>
                     <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Share Your Experience
                                 </h2>
@@ -119,7 +119,7 @@ const Blog = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Exclusive Merchandise
 
@@ -129,7 +129,7 @@ const Blog = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Feedback and Suggestions
 
@@ -146,7 +146,7 @@ const Blog = () => {
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Your Entertainment Hub</h2>
                     <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Mobile App</h2>
                                 <p className="text-base font-normal text-fuchsia-700">Take the entertainment experience with you wherever you go! Download our mobile app, available on both Android and iOS devices, for on-the-go access to events, ticketing, and more.
@@ -154,7 +154,7 @@ const Blog = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Newsletter
 
@@ -165,7 +165,7 @@ const Blog = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Customer Support
                                 </h2>
@@ -181,7 +181,7 @@ const Blog = () => {
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Join the Entertainment Revolution
                     </h2>
                     <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Community
                                 </h2>
@@ -189,7 +189,7 @@ const Blog = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Loyalty Program
 
@@ -200,7 +200,7 @@ const Blog = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Sustainability Initiatives
                                 </h2>
@@ -215,7 +215,7 @@ const Blog = () => {
                 <div className="pt-6 md:pt-8 lg:pt-12">
                     <h2 className="text-3xl font-semibold text-fuchsia-900">Security and Privacy</h2>
                     <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Secure Transactions
                                 </h2>
@@ -224,7 +224,7 @@ const Blog = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="card w-96 bg-fuchsia-100 shadow-sm my-10">
+                        <div className="card w-fit bg-fuchsia-100 shadow-sm my-10">
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-medium text-fuchsia-800">Privacy Policy
                                 </h2>
