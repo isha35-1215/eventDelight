@@ -2,7 +2,7 @@ Website Name: EventDelight
 
 live site link: https://event-management-5f92f.web.app
 
-Here are five different features and functionalities that this website has:
+this is an event management website. Here are five different features and functionalities that this website has:
 
 1. **User Authentication:**
    - The website allows users to register and log in using their email and password. It also provides a "Sign Out" option for logged-in users, ensuring secure access to certain parts of the site.
